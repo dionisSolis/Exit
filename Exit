@@ -1,0 +1,22 @@
+using System;
+namespace First
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            while (true)
+            {
+                Console.WriteLine("Перед тобой 4 двери. В какую пойдешь?");
+                Console.WriteLine("left, middle, right, exit");
+                string choice = Console.ReadLine();
+                if (choice == "exit")
+                {
+                    Console.WriteLine("Пока!");
+                    break;
+                }
+            }
+            Console.Read();
+        }
+    }
+}
