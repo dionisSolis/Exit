@@ -5,18 +5,20 @@ namespace First
     {
         static void Main(string[] args)
         {
+            string choice;
+
             while (true)
             {
                 Console.WriteLine("Перед тобой 4 двери. В какую пойдешь?");
                 Console.WriteLine("left, middle, right, exit");
-                string choice = Console.ReadLine();
-                
+                choice = Console.ReadLine();
+
                 if (choice == "exit")
                 {
                     Console.WriteLine("Пока!");
                     break;
                 }
-                
+
             }
             Console.Read();
         }
