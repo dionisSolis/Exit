@@ -20,7 +20,6 @@ namespace First
                     case "middle":
                         break;
                     default:
-                        choice = "exit";
                         Console.WriteLine("Плохо, очень плохо :(");
                         break;
                 } 
