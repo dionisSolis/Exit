@@ -5,21 +5,30 @@ namespace First
     {
         static void Main(string[] args)
         {
-            string choice;
+            string choice = "";
 
-            while (true)
+            while (choice != "exit")
             {
                 Console.WriteLine("Перед тобой 4 двери. В какую пойдешь?");
                 Console.WriteLine("left, middle, right, exit");
                 choice = Console.ReadLine();
-
-                if (choice == "exit")
+                
+                switch (choice)
                 {
-                    Console.WriteLine("Пока!");
-                    break;
-                }
+                    case "left":
+                    case "right":
+                    case "middle":
+                        break;
+                    default:
+                        choice = "exit";
+                        Console.WriteLine("Плохо, очень плохо :(");
+                        break;
+                } 
 
+                Console.WriteLine();
             }
+
+            Console.WriteLine("Пока!");
             Console.Read();
         }
     }
